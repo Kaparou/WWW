@@ -1,0 +1,63 @@
+body{
+    
+    position: relative;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: rgb(49, 65, 102);
+
+}
+
+
+
+h1{
+
+    text-align: center;
+    color: seashell;
+    font-size: 300%;
+    position: relative;
+
+}
+
+h2{
+
+    position: relative;
+    text-align: center;
+    color: seashell;
+    
+}
+
+ul{
+
+    position: absolute;
+    line-height: 270%;
+    top: 100%;
+    left: 44%;
+    text-align: center;
+    color:seashell;
+    font-size: x-large;
+    
+}
+
+.buttons{
+
+    position: absolute;
+    top: 280%;
+    left: 56%;
+    line-height: 300%;
+    
+}
+
+.submit{
+
+    position: absolute;
+    top: 650%;
+    left: 45%;
+}
+
+.allprod{
+
+    position: absolute;
+    top: 650%;
+    left: 55%;
+}

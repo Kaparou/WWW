@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Music Artist Advisor</title>
+    </head>
+
+    <body>
+
+        
+        <link rel="stylesheet" href="css/website-style.css">
+		<form method="post" action="/servlets-db/add-product" class="form1">
+		    <div class="front">
+		        <h1>Artist Selection Page</h1>
+
+		        <h2>Select artist characteristics</h2>
+		        <ul>
+
+		            <li><label for="barcode"><b>Barcode</b></label><br>
+						<input type="text" placeholder="Enter Barcode here" name="barcode" required><br></li>
+		            <li><label for="name"><b>Name</b></label><br>
+						<input type="text" placeholder="Enter Name here" name="name" required><br></li>
+		            <li><label for="genre"><b>Genre</b></label><br>
+						<input type="text" placeholder="Enter genre here" name="genre" required><br></li>
+		            <li><label for="description"><b>Description</b></label><br>
+						<input type="text" placeholder="Enter description here" name="description" required><br></li>
+
+		        </ul>
+
+
+		        <div class="submit">
+		           <button type="submit">Save Artist</button>
+		        </div>
+
+		    </div>
+		</form>
+		<div class="allprod">
+			<button type="submit" class="goback"><a href="/servlets-db/all-products">See all Artists</a</button>
+        </div>
+
+    </body>
+
+    
+
+
+</html>    
