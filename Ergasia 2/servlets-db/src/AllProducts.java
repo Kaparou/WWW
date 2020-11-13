@@ -20,24 +20,24 @@ public class AllProducts extends HttpServlet {
         out.println("<html>");
         out.println("<head><title>DB Contents</title>");
         out.println("<style>");
-        out.println("td { padding 2% 3%; border: 1px dotted rebeccapurple;}");
+        out.println("td { padding 2% 3%; border: 1px solid black;}");
         out.println("th { color: gray;}");
         out.println("</style>");
         out.println("</head>");
-        out.println("<body>");
+        out.println("<body style ='background-color: rgb(27,51,85);'>");
 
         try (Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/demo?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=EET",
-            "temp", ""); // for mysql
+            "jdbc:mysql://localhost:3306/testDatabase",
+            "admin", ""); // for mysql
             Statement stmt = conn.createStatement();) 
         {
 
-            String sqlStr = "select * from products order by id";
-            out.println("<h3>The database contents so far.</h3>");
+            String sqlStr = "SELECT * FROM products ORDER BY FIELD('barcode', 'Name', 'Color') ASC" ;
+            out.println("<h3>PRODUCTS </h3>");
             ResultSet rset = stmt.executeQuery(sqlStr);
 
             int count = 0;
-            out.println("<table style='border-spacing: 7px 13px;'>");
+            out.println("<table>");
             out.println("<tr>"
                         +   "<th scope='col'>Barcode</th>"
                         +   "<th scope='col'>Name</th>"
@@ -46,26 +46,27 @@ public class AllProducts extends HttpServlet {
                         +   "</tr>");
             while(rset.next()) {
                 out.println("<tr>");
-                out.println(""
-                    + "<td style='text-align:center;'>" + rset.getString("barcode") + "</td>"
-                    + "<td style='text-align:center;'>" + rset.getString("name")  + "</td>"
-                    + "<td style='text-align:center;'>" + rset.getString("genre")  + "</td>"
-                    + "<td style='text-align:center;'>" + rset.getString("description") + "</td>");
+                out.println("<td style='text-align:center; color: white;'>" + rset.getString("barcode") + "</td>"
+                    + "<td style='text-align:center; color: white;'>" + rset.getString("name")  + "</td>"
+                    + "<td style='text-align:center; color: white;'>" + rset.getString("genre")  + "</td>"
+                    + "<td style='text-align:center; color: white;'>" + rset.getString("description") + "</td>");
                 out.println("</tr>");
                 count++;
             }
             out.println("</table>");
-            out.println("<h4>" + count + " records found.</h4>");
+            out.println("<h4>" + count + " artists are in database </h4>");
             out.println("<button type='submit'>"
-                        +"<a style='text-decoration:none;color:rebeccapurple;'"
+                        +"<a style='text-decoration:none; color:black;'"
                         +"href='/servlets-db/add-product.html'>Insert a new product</a</button>");
             
         } catch(Exception ex) {
-            out.println("Oups. We can't deliver your request at this time. Try again later.");
-           // out.println("<p>Error: " + ex.getMessage() + "</p>");  // for debug
-            //ex.printStackTrace();
+           out.println("Oups. We can't deliver your request at this time. Try again later.");
+          //out.println("<p>Error: " + ex.getMessage() + "</p>");  // debuging
+          //ex.printStackTrace();
         }
         out.println("</body></html>");
     out.close();
    }
+
+
 }

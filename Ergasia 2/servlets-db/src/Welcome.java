@@ -15,11 +15,11 @@ public class Welcome extends HttpServlet {
 
 
         try (Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/demo?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=EET",
-            "temp", ""); // for mysql
+            "jdbc:mysql://localhost:3306/testDatabase",
+            "admin", ""); // for mysql
             Statement stmt = conn.createStatement();) 
         {
-            String sqlStr = "select * from products";
+            String sqlStr = "SELECT * FROM products";
             ResultSet rset = stmt.executeQuery(sqlStr);
             while(rset.next()) { count++; }
         }
@@ -31,32 +31,32 @@ public class Welcome extends HttpServlet {
         +"<html>" 
         +"<head>"
         +"<meta charset='UTF-8'>"
-        +"<title>DB & Servlets Demo For Artists</title>"
+        +"<title>DB & Servlets Demo</title>"
         +"<link rel='stylesheet' href='index.css'>"
     +"</head>"
     +"<body>"
         +"<main>"
             +"<section style='text-align:center;'>"
-                +"<h1 style='font-size: 2.2rem;'margin-top: 20px;>"
-                    +"Servlets and Databases"
+                +"<h1>"
+                    +"Demonstration of using Servlets and Databases"
                 +"</h1>"
                 +"<br>"
             +"</section>"
     
             +"<section style='text-align:center;'>"
-                +"<h2>Currently our database contains <strong>" +count+ "</strong> products.</h2><br>"
+                +"Currently our database contains <strong>" +count+ "</strong> artists.<br>"
             +"</section>"
     
             +"<section>"
                 +"<h4>"
                     +"<ul style='text-align:center;'>"
                         +"<li>"
-                            +"To see all artists: "
+                            +"To see all products: "
                             +"<a href='http://83.212.78.197:8080/servlets-db/all-products'><u>All products</u></a>"
                         +"</li>"
                         +"<br>"
                         +"<li>"
-                            +"To add a new artist: "
+                            +"To add a new product: "
                             +"<a href='http://83.212.78.197:8080/servlets-db/add-product.html'><u>Add product</u></a>"
                         +"</li>"
                     +"</ul>"
