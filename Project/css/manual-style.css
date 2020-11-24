@@ -1,0 +1,74 @@
+h1{
+
+    text-align: center;
+    color: seashell;
+    background-color: black;
+    font-size: 300%;
+    position: relative;
+
+}
+
+body{
+    
+    position: relative;
+    background-image: url("header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1280px;
+}
+
+.container{
+
+    position: relative;
+    width: 1000px;
+    left: 25%;
+    
+}
+
+h2{
+
+    text-align: center;
+    color: black;
+    position: relative;
+
+}
+
+.Description{
+
+    font-size: large;
+    border-bottom: 1px solid black;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+
+}
+
+.sections{
+
+    position: relative;
+    font-size: x-large;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+
+}
+
+.section_links{
+
+    position: relative;
+    text-align: left;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+a{
+    
+    margin-right: 7.98507%;
+    width: 31.34328%;
+
+}
+
+

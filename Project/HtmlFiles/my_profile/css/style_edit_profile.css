@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+body {
+    background-image: url(../img/background.jpg); 
+    background-color: #cccccc;
+}
+
+.container {
+    background: #fff;
+    width: 720px;
+    height: 576px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+}
+
+.leftbox {
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: #f77007;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
+    border: .1em solid #fff;
+}
+
+nav a {
+    list-style: none;
+    padding: 45px;
+    color: #fff;
+    font-size: 1.3em;
+    display: block;
+    transition: all .3s ease-in-out;
+    margin-top: 50px;
+}
+
+nav a:hover {
+    color: #e11212;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+nav a:first-child {
+    margin-top: 7px;
+}
+
+nav a.active {
+    color: #e11212;
+}
+
+.rightbox {
+    width:  60%;
+    margin-left: 27%;
+}
+
+.tabShow {
+    transition: all .5s ease-in;
+    width: 80%;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #e11212;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #777;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.input {
+    border: 0;
+    border-bottom: 1px solid #f77007;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8em;
+    padding: 7px 0;
+    color: #070707;
+    outline: none;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 0;
+    color: #fff;
+    background: #f77007;
+    padding: 7px 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: #535353;
+  text-align: left;
+}
+.rad > input {
+  visibility: hidden;
+  position: absolute;
+}
+.rad > i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: inset 0 0 0 8px #fff;
+  border: 0.5px solid gray;
+}
+.rad > input:checked + i {
+  box-shadow: inset 0 0 0 3px #fff;
+  background: #ffc000;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 5px;
+    border-color: #f77007;
+    border: 2px solid #555;
+    margin-bottom: 6px;
+}
+
+.tit {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 50px;
+    background: transparent;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.searchbar{
+    padding-left: 2%;
+	text-align:right;
+	background-color: #a90707;
+	height: 35px;
+	padding-top: 10px;
+	padding-right:30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
+    border: .1em solid #f77007;
+}
+
+.searchbar input {
+	font-size:15px;
+}
+
+.searchbar input[type = submit] {
+	text-align: center;
+	font-size: 15px;	
+}
+
+.searchbar input[type = submit]:hover {
+    cursor: pointer;
+}
+
+.searchbar a {
+	float:left;
+	display: inline-block;
+	padding: 0px 10px 0px 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.searchbar a.active{
+	background-color: #f77007;
+	color: #fff;
+}

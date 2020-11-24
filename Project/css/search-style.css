@@ -1,0 +1,57 @@
+h1{
+
+    text-align: center;
+    color: seashell;
+    background-color: black;
+    font-size: 300%;
+    position: relative;
+
+}
+
+h2{
+
+    text-align: center;
+    color: black;
+    font-size: 200%;
+    position: relative;
+    text-decoration: underline;
+
+}
+
+body{
+    
+    position: relative;
+    background-image: url("header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2080px;
+}
+
+.Description{
+
+    position: relative;
+    font-size: large;
+    left: 25%;
+    width:950px;
+
+}
+
+img{
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 5px solid black;
+
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    font-size: large;
+    
+}

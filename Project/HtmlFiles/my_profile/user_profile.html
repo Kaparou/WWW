@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style_profile.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>    
+<body>
+    <div class="tit">
+        MoviePedia
+    </div>
+    <div class = "searchbar">
+		<a class="active" href="Home.php">Home</a>
+  		<a href="about.php">About</a>
+ 		<a href="contact.php">Contact</a>
+ 		<a href="10top.php">Highest rated movies</a>
+ 		<a href="top10Users.php">Most followed users</a>
+ 		<form action="response.php" method = "get">
+			<input type = "text" name = "movie" placeholder="Search...">
+			<input type = "submit" name = "submit_form" value = "search";>
+		</form>
+	</div>
+    <div class="container">
+        <div class="leftbox">
+            <img src="img/body.png" class="avatar">
+            <div class="username">
+                Chris Katsaros
+            </div>
+            <div class="birthday">
+                20/12/1997
+            </div>
+            <div class="followers">
+                190.832 followers
+            </div>
+            <div class="follow">
+                follow 
+                <i class="fa fa-heart"></i>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="favorites">
+                <h1>Favorites</h1>
+                <h2>Genre</h2>
+                <p>Science Fiction</p>
+                <h2>Movie</h2>
+                <p>Deadool</p>
+                <h2>TV Show</h2>
+                <p>Gotham</p>
+                <h2>Actor</h2>
+                <p>Emma Stone</p>
+                <h2>Director</h2>
+                <p>Quentin Tarantino</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.fa-heart').click(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+            }
+            else {
+                $(this).addClass('active')
+            }
+        });
+    </script>
+</body>
+</html>

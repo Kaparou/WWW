@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+body {
+    background-image: url(../img/background.jpg); 
+    background-color: #cccccc;
+}
+
+.tit {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-left: 50px;
+    background: transparent;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.searchbar{
+    padding-left: 2%;
+	text-align:right;
+	background-color: #a90707;
+	height: 35px;
+	padding-top: 10px;
+	padding-right:30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
+    border: .1em solid #f77007;
+}
+
+.searchbar input {
+	font-size:15px;
+}
+
+.searchbar input[type = submit] {
+	text-align: center;
+	font-size: 15px;	
+}
+
+.searchbar input[type = submit]:hover {
+    cursor: pointer;
+}
+
+.searchbar a {
+	float:left;
+	display: inline-block;
+	padding: 0px 10px 0px 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.searchbar a.active{
+	background-color: #f77007;
+	color: #fff;
+}
+
+.container {
+    background: #fff;
+    width: 720px;
+    height: 576px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+}
+
+.leftbox {
+    float: left;
+    top: -5%;
+    left: -15%;
+    position: absolute;
+    width: 40%;
+    height: 110%;
+    background: #f77007;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
+    border: .1em solid #fff;
+}
+
+.rightbox {
+    width:  60%;
+    margin-left: 40%;
+    padding-top: 2%;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    padding: 2%;
+    margin-top: 16%;
+    margin-left: 23%;
+}
+
+.fa-heart {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    color: #e11212;
+}
+
+.fa-heart.active {
+    color: #e11212;
+}
+
+.username {
+    margin-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.birthday {
+    font-family: "Monserrat", sans-serif;
+    padding: 10%;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+.followers {
+    font-family: "Monserrat", sans-serif;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #e11212;
+}
+
+.follow {
+    font-family: "Monserrat", sans-serif;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #e11212;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #f77007;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+p {
+    border-bottom: 1px solid #f77007;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8em;
+    padding: 7px 0;
+    color: #070707;
+    outline: none;
+}

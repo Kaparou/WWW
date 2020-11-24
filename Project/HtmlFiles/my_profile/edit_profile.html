@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="css/style_edit_profile.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head> 
+<body>
+    <div class="tit">
+        MoviePedia
+    </div>
+    <div class = "searchbar">
+		<a class="active" href="Home.php">Home</a>
+  		<a href="about.php">About</a>
+ 		<a href="contact.php">Contact</a>
+ 		<a href="10top.php">Highest rated movies</a>
+ 		<a href="top10Users.php">Most followed users</a>
+ 		<form action="response.php" method = "get">
+			<input type = "text" name = "movie" placeholder="Search...">
+			<input type = "submit" name = "submit_form" value = "search";>
+		</form>
+	</div>
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)"
+                   class="tab active">
+                    <i class="fa fa-user"></i>
+                <a onclick="tabs(1)"
+                   class="tab">
+                    <i class="fa fa-key"></i>
+                </a>
+                </a>
+                <a onclick="tabs(2)"
+                   class="tab">
+                    <i class="fa fa-tasks"></i>
+                </a>
+                <a onclick="tabs(3)"
+                   class="tab">
+                    <i class="fa fa-sign-out-alt"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <h1>Personal Info</h1>
+                <h2>Profile Picture</h2>
+                <form action="/action_page.php">
+                    <img src="img/body.png" class="avatar"> <br>
+                    <input type="file" id="img" name="img" accept="image/*">
+                    <input type="submit">
+                </form> 
+                <h2>Full Name</h2>
+                <input type="text" class="input" value="Chris Katsaros">
+                <h2>Birthday</h2>
+                <input type="date" class="input" value="20/12/1997">
+                <h2>Gender</h2>
+                <p>
+                    <label class="rad">
+                        <input type="radio" name="r1" value="a" checked="checked" /> <i></i> Male
+                    </label>
+                    <label class="rad">
+                        <input type="radio" name="r1" value="b" /> <i></i> Female
+                    </label>
+                </p>
+                <h2>Email</h2>
+                <input type="email" class="input" value="chriskatsos@hotmail.com">
+                <button class="btn">Save Changes</button>
+            </div>
+            <div class="password tabShow">
+                <h1>Change Password</h1>
+                <h2>Old Password</h2>
+                <input type="password" class="input" value="brightcode">
+                <h2>New Password</h2>
+                <input type="password" class="input" value="brightcode">
+                <h2>Confirm New Password</h2>
+                <input type="password" class="input" value="brightcode">
+                <button class="btn">Save Changes</button>
+            </div>
+            <div class="favorites tabShow">
+                <h1>Favorites</h1>
+                <h2>Genre</h2>
+                <input type="text" class="input" value="Science Fiction">
+                <h2>Movie</h2>
+                <input type="text" class="input" value="Deadpool">
+                <h2>TV Show</h2>
+                <input type="text" class="input" value="Gotham">
+                <h2>Actor</h2>
+                <input type="text" class="input" value="Peter Dickman">
+                <h2>Director</h2>
+                <input type="text" class="input" value="Quentin Tarantino">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const tabBtn = document.querySelectorAll(".tab");
+        const tab = document.querySelectorAll(".tabShow");
+        
+        function tabs(panelIndex) {
+            tab.forEach(function(node) {
+                node.style.display = "none";
+            });
+            tab[panelIndex].style.display = "block";
+        }
+        tabs(0);
+    </script>
+    <script>
+        $(".tab").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+</body>
+</html>
