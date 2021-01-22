@@ -1,0 +1,36 @@
+textarea {
+	width:800px;
+	height:80px;
+	background-color: #b4b4b4;
+	resize:none;
+}
+
+body {
+	
+	background-image: url("images/header2.jpg");
+}
+
+
+
+button {
+	width:100px;
+	height:30px;
+	background-color: black;
+	border:none;
+	color:#fff;
+	font-family:arial;
+	font-weight:400;
+	cursor:pointer;
+	
+}
+
+
+.reviews-box {
+	width:70%;
+	padding:20px;
+	margin-bottom:8px;
+	border-radius:4px;
+	
+	background-color: #fb9253 ;
+	
+}

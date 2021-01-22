@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="631c2878-b754-41e4-9bd6-c4fef9d005bb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/../php-8.0.1-nts-Win32-vs16-x64" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1n0qEEYScAsADYOO9QbLTNCFvkG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../xampp/php/php.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Home.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Home.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Home.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="631c2878-b754-41e4-9bd6-c4fef9d005bb" name="Default Changelist" comment="" />
+      <created>1610537251011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610537251011</updated>
+      <workItem from="1610537253395" duration="4742000" />
+      <workItem from="1610615966597" duration="14972000" />
+      <workItem from="1610641733940" duration="566000" />
+      <workItem from="1610642339970" duration="674000" />
+      <workItem from="1610643100519" duration="287000" />
+      <workItem from="1610643889748" duration="129000" />
+      <workItem from="1610644030940" duration="469000" />
+      <workItem from="1610645212591" duration="413000" />
+      <workItem from="1610645807496" duration="121000" />
+      <workItem from="1610645962561" duration="209000" />
+      <workItem from="1610646189285" duration="51000" />
+      <workItem from="1610646253924" duration="691000" />
+      <workItem from="1610646956021" duration="1645000" />
+      <workItem from="1610656303044" duration="825000" />
+      <workItem from="1610730097491" duration="3698000" />
+      <workItem from="1610734013948" duration="14256000" />
+      <workItem from="1610801549459" duration="11552000" />
+      <workItem from="1610830214656" duration="132000" />
+      <workItem from="1610830941534" duration="9732000" />
+      <workItem from="1610870935956" duration="6270000" />
+      <workItem from="1610877254422" duration="16880000" />
+      <workItem from="1610914407850" duration="1962000" />
+      <workItem from="1610983657911" duration="1548000" />
+      <workItem from="1610985675274" duration="21135000" />
+      <workItem from="1611023131930" duration="12969000" />
+      <workItem from="1611045155908" duration="6997000" />
+      <workItem from="1611062454408" duration="14958000" />
+      <workItem from="1611131226013" duration="1799000" />
+      <workItem from="1611135428314" duration="11197000" />
+      <workItem from="1611217362693" duration="3644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
