@@ -46,12 +46,7 @@ $title = rawurlencode($title);
 </form>
 
 <?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword =  "1234";
-$dbName = "moviesdb" ;
 
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword,$dbName) or die("Connect failed: %s\n". $conn -> error);
 $sql = "SELECT * FROM moviesdb.newreviews";
 $result = $conn->query($sql);
 

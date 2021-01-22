@@ -16,7 +16,7 @@ if (isset($_GET['commentsubmit'])){
 
 
         $dbServername = "localhost";
-        $dbUsername = "root";
+        $dbUsername = "root1";
         $dbPassword =  "1234";
         $dbName = "moviesdb" ;
 

@@ -1,17 +1,7 @@
 <?php
 session_start();
+include_once ('connection.php');
 //include('connection.php'); CONNECTION ANTI GIA TO INCLUDE
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword =                                                                                                                                                                                               "1234";
-$dbName = "moviesdb" ;
-
-
-$conn = new mysqli('localhost','root',$dbPassword,'moviesdb');
-$conn =  mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName );
-if (!$conn) {
-    die;
-}
 //set_error_handler(function() { /* ignore errors */ });
 //$this_user = $_SESSION["namev2"]; // DEN PREPEI NA GINEI ME GLOBAL METAVLHTH
 $this_user_id = $_GET['id'];

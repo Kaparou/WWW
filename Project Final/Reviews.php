@@ -52,25 +52,20 @@ $title = rawurlencode($title);
 </form>
 
 <?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword =  "1234";
-$dbName = "moviesdb" ;
 
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword,$dbName) or die("Connect failed: %s\n". $conn -> error);
-$sql = "SELECT * FROM MOVIESDB.newreviews";
+$sql = "SELECT * FROM moviesdb.newreviews";
 $result = $conn->query($sql);
 
 
-while ($row = $result->fetch_assoc()){
-    if (!strcasecmp($row['movie_name'], $title)){
+while ($row = mysqli_fetch_row($result)){
+    if (!strcasecmp($row[0], $title)){
         echo"<div class = 'reviews-box'>";
-        if ($row['is_member'] == 0){
-            echo $row['user_name']."<h3> Rate: ";
+        if ($row[5] == 0){
+            echo $row[2]."<h3> Rate: ";
         }
         else{
-            $name = $row['user_name'];
-            $id = $row['user_id'];
+            $name = $row[2];
+            $id = $row[6];
             //$_SESSION["namev2"] = $name;
 
             $is_following = false;
@@ -80,9 +75,9 @@ while ($row = $result->fetch_assoc()){
             //$_SESSION["first"] = 'yes';
             echo "<a href=userProfv2.php?id=$id> $name </a> <h3> Rate:";
         }
-        echo $row['rate']." Date: ";
-        echo $row['date']."<br><br></h3>";
-        echo $row['review'];
+        echo $row[4]." Date: ";
+        echo $row[3]."<br><br></h3>";
+        echo $row[1];
         echo "<br>";
         echo"</div>";
 
